@@ -1,0 +1,7 @@
+services:
+    scrapy:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: scrapy
+      #restart: always

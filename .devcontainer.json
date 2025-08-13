@@ -1,0 +1,14 @@
+{
+  "name": "Scrapy + Playwright + uv",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "extensions": [
+    "ms-python.python"
+  ],
+  "postCreateCommand": "uv sync",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/app,type=bind"
+  ]
+}
