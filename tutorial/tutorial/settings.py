@@ -27,11 +27,6 @@ ROBOTSTXT_OBEY = True
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 DOWNLOAD_DELAY = 1
 
-PLAYWRIGHT_LAUNCH_OPTIONS = {
-    "headless": True,
-    "timeout": 20 * 1000,  # 20 seconds
-}
-
 # Disable cookies (enabled by default)
 # COOKIES_ENABLED = False
 
@@ -49,13 +44,6 @@ PLAYWRIGHT_LAUNCH_OPTIONS = {
 # SPIDER_MIDDLEWARES = {
 #    "tutorial.middlewares.TutorialSpiderMiddleware": 543,
 # }
-
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-
-DOWNLOAD_HANDLERS = {
-    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
